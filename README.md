@@ -62,10 +62,6 @@ Use **Backup & Export → Full JSON Backup** periodically. Restore validates the
 
 Push the repository to GitHub and enable **Settings → Pages → Source: GitHub Actions**. The included workflow installs dependencies, tests, lints, builds, and deploys `dist/`. Relative Vite assets and `HashRouter` prevent repository-subpath and refresh 404 problems.
 
-## ChatGPT Sites guidance
-
-The app is a static Vite build with no server routes, native binaries, or server-only authentication, so `dist/` can be hosted by a static site surface. Keep the default mode local-only: do not add platform storage as an authoritative data source unless an optional, separately designed sync feature is desired. IndexedDB and the service worker remain the core persistence/offline layer.
-
 ## Testing
 
 Vitest covers active-time math, pause exclusion, averages, rates, median, fastest/slowest laps, undo/delete, invalid-lap exclusion, targets, estimates, timestamp restoration, duplicate cooldown, backup validation, duplicate-safe merge, shared floating state, and shortcut typing guards.
